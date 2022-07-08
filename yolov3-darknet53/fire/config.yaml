@@ -1,6 +1,6 @@
 use_gpu: true
 use_xpu: false
-log_iter: 50
+log_iter: 10
 save_dir: output
 snapshot_epoch: 2
 print_flops: false
@@ -30,7 +30,7 @@ OptimizerBuilder:
     type: L2
 
 architecture: YOLOv3
-pretrain_weights: ./DarkNet53_pretrained.pdparams
+pretrain_weights: ./pretrain_weights/DarkNet53_pretrained.pdparams
 norm_type: sync_bn
 
 YOLOv3:

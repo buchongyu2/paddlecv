@@ -3,7 +3,7 @@ import paddle
 from ppdet.engine import Trainer, init_parallel_env
 import ppdet.utils.check as check
 
-cfg_file = 'fire.yaml'
+cfg_file = 'config.yaml'
 cfg = ppdet.core.workspace.load_config(cfg_file)
 
 init_parallel_env()
